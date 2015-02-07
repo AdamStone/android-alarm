@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AlarmSetupActivity"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/step2_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/step2_heading"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/step2_instruction1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/step2_instruction1" />
+
+    <!-- empty view for blank space -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    
+    <TextView
+        android:id="@+id/step2_scan_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/step2_scan_result_null"/>
+
+    <Button
+        android:id="@+id/step2_button_scan"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/button_start_scan"
+        android:onClick="setBarcode" />
+
+    <!-- empty view for blank space -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+        
+    
+    <!--  nav buttons
+    <TableLayout
+        android:id="@+id/step2_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        style="?android:attr/buttonBarStyle"
+        android:stretchColumns="*">
+        
+        <TableRow
+            android:id="@+id/step2_table_row"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+        
+		    <Button
+		        android:id="@+id/step2_button_back"
+		        android:text="@string/button_back"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="?android:attr/buttonBarButtonStyle"
+		        android:onClick="goBack" />
+		    
+		    <Button
+		        android:id="@+id/step2_button_next"
+		        android:text="@string/button_next"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="?android:attr/buttonBarButtonStyle"
+		        android:onClick="goNext" />
+		    
+	    </TableRow>
+    </TableLayout>
+     -->
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- android:background="@drawable/selector_list_item"-->
+    
+    <ImageView 
+        android:id="@+id/alarm_row_icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginRight="5dip"
+        android:src="@drawable/ic_alarm"
+		android:contentDescription="alarm icon" />
+    
+    <TextView
+        android:id="@+id/alarm_row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/alarm_row_icon"
+        android:text="testName" />
+    
+    <TextView
+        android:id="@+id/alarm_row_time"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dip"
+        android:text="00:00 AM" />
+    
+    <CheckBox
+        android:id="@+id/alarm_row_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarm_row_time"
+        android:layout_alignParentRight="true" />    
+    
+    <TextView
+        android:id="@+id/alarm_row_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarm_row_name"
+        android:layout_toRightOf="@id/alarm_row_icon"
+        android:layout_alignBaseline="@id/alarm_row_checkbox"
+        android:text="song name test"
+        android:maxLines="1"
+        android:layout_toStartOf="@id/alarm_row_time" />        
+        <!-- android:ellipsize="end"
+        android:scrollHorizontally="true" /-->
+    
+
+
+
+</RelativeLayout>

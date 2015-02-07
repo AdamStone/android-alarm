@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alarm="http://schemas.android.com/apk/res/com.nekosoft.alarm" >
+    
+    <item alarm:state_song_selected="true"
+        android:drawable="@drawable/ic_headphones_white" />
+    
+    <item android:drawable="@drawable/ic_headphones" />
+
+</selector>

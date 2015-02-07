@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AlarmSetupActivity" >
+    
+    <TextView
+        android:id="@+id/step3_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/step3_heading"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView 
+        android:id="@+id/step3_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/step3_instruction" />
+  
+    
+    <!-- empty view for blank space -->
+    <!--View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </View-->
+
+    <ExpandableListView
+        android:id="@+id/audio_selection_listview"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="0dp" 
+        android:layout_weight="5"
+		android:choiceMode="multipleChoice" />
+
+    
+    
+    
+    
+    
+    <!--Button
+        android:id="@+id/audio_selection_footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Finish"
+        android:onClick="saveAlarm" >
+    </Button-->
+
+    
+    <!--  nav buttons 
+    
+    <TableLayout
+        android:id="@+id/step2_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        style="?android:attr/buttonBarStyle"
+        android:stretchColumns="*">
+        
+        <TableRow
+            android:id="@+id/step3_table_row"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+        
+		    <Button
+		        android:id="@+id/step3_button_back"
+		        android:text="@string/button_back"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="?android:attr/buttonBarButtonStyle"
+		        android:onClick="goBack" />
+		    
+		    <Button
+		        android:id="@+id/step3_button_finish"
+		        android:text="@string/button_finish"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="?android:attr/buttonBarButtonStyle"
+		        android:onClick="finish" />
+		    
+	    </TableRow>
+    </TableLayout>    
+    -->
+
+    <CheckBox
+        android:id="@+id/audio_selection_randomize_checkbox"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/audio_selection_randomize" />
+
+</LinearLayout>
